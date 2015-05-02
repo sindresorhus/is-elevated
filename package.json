@@ -1,0 +1,48 @@
+{
+  "name": "is-elevated",
+  "version": "0.0.0",
+  "description": "Check if the process is running with elevated privileges",
+  "license": "MIT",
+  "repository": "sindresorhus/is-elevated",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "admin",
+    "administrator",
+    "win",
+    "win32",
+    "windows",
+    "process",
+    "running",
+    "cmd",
+    "shell",
+    "command-line",
+    "check",
+    "detect",
+    "is",
+    "root",
+    "sudo",
+    "elevate",
+    "elevated",
+    "privileges"
+  ],
+  "dependencies": {
+    "is-admin": "^1.0.2",
+    "is-root": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
