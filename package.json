@@ -39,7 +39,7 @@
     "privileges"
   ],
   "dependencies": {
-    "is-admin": "^1.0.2",
+    "is-admin": "^2.1.0",
     "is-root": "^1.0.0"
   },
   "devDependencies": {
