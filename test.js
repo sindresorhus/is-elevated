@@ -1,4 +1,4 @@
-import test from 'ava';
+import {serial as test} from 'ava';
 import m from '.';
 
 test('normal', async t => {
@@ -11,7 +11,7 @@ if (process.platform === 'win32') {
 	test('elevated', async t => {
 		const _ = process.getuid;
 		process.getuid = () => 0;
-		t.true(m());
+		t.true(await m());
 		process.getuid = _;
 	});
 }
