@@ -10,10 +10,10 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -39,10 +39,11 @@
     "privileges"
   ],
   "dependencies": {
-    "is-admin": "^1.0.2",
+    "is-admin": "^2.1.0",
     "is-root": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "*",
+    "xo": "*"
   }
 }

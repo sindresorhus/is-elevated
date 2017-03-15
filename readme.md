@@ -17,11 +17,11 @@ $ npm install --save is-elevated
 ## Usage
 
 ```js
-var isElevated = require('is-elevated');
+const isElevated = require('is-elevated');
 
-isElevated(function (err, elevated) {
+isElevated().then(elevated => {
 	console.log(elevated);
-	// false
+	//=> false
 });
 ```
 
@@ -33,4 +33,4 @@ isElevated(function (err, elevated) {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
