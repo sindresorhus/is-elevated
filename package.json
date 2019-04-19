@@ -41,7 +41,7 @@
 	],
 	"dependencies": {
 		"is-admin": "^3.0.0",
-		"is-root": "^2.0.0"
+		"is-root": "^2.1.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",
