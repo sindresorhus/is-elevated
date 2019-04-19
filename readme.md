@@ -10,7 +10,7 @@ Keep in mind that `root` and `Administrator` mean different things so this modul
 ## Install
 
 ```
-$ npm install --save is-elevated
+$ npm install is-elevated
 ```
 
 
@@ -19,10 +19,10 @@ $ npm install --save is-elevated
 ```js
 const isElevated = require('is-elevated');
 
-isElevated().then(elevated => {
-	console.log(elevated);
+(async () => {
+	console.log(await isElevated());
 	//=> false
-});
+})();
 ```
 
 
