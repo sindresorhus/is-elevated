@@ -1,8 +1,8 @@
 import {serial as test} from 'ava';
-import m from '.';
+import isElevated from '.';
 
 test('normal', async t => {
-	t.false(await m());
+	t.false(await isElevated());
 });
 
 if (process.platform === 'win32') {
@@ -11,7 +11,7 @@ if (process.platform === 'win32') {
 	test('elevated', async t => {
 		const _ = process.getuid;
 		process.getuid = () => 0;
-		t.true(await m());
+		t.true(await isElevated());
 		process.getuid = _;
 	});
 }
