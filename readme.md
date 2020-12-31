@@ -1,4 +1,4 @@
-# is-elevated [![Build Status](https://travis-ci.org/sindresorhus/is-elevated.svg?branch=master)](https://travis-ci.org/sindresorhus/is-elevated)
+# is-elevated
 
 > Check if the process is running with elevated privileges
 
