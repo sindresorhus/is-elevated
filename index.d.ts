@@ -3,15 +3,10 @@ Check if the process is running with elevated privileges.
 
 @example
 ```
-import isElevated = require('is-elevated');
+import isElevated from 'is-elevated';
 
-(async () => {
-	console.log(await isElevated());
-	//=> false
-})();
+console.log(await isElevated());
+//=> false
 ```
 */
-declare function isElevated(): Promise<boolean>;
-
-export = isElevated;
-
+export default function isElevated(): Promise<boolean>;

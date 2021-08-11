@@ -4,13 +4,16 @@
 	"description": "Check if the process is running with elevated privileges",
 	"license": "MIT",
 	"repository": "sindresorhus/is-elevated",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -22,7 +25,6 @@
 	"keywords": [
 		"admin",
 		"administrator",
-		"win",
 		"win32",
 		"windows",
 		"process",
@@ -40,12 +42,12 @@
 		"privileges"
 	],
 	"dependencies": {
-		"is-admin": "^3.0.0",
-		"is-root": "^2.1.0"
+		"is-admin": "^4.0.0",
+		"is-root": "^3.0.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^3.15.0",
+		"tsd": "^0.17.0",
+		"xo": "^0.44.0"
 	}
 }

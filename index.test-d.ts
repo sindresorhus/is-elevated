@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import isElevated = require('.');
+import isElevated from './index.js';
 
 expectType<Promise<boolean>>(isElevated());

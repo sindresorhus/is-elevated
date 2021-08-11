@@ -1,5 +1,7 @@
-'use strict';
-const isRoot = require('is-root');
-const isAdmin = require('is-admin');
+import process from 'node:process';
+import isRoot from 'is-root';
+import isAdmin from 'is-admin';
 
-module.exports = async () => process.platform === 'win32' ? isAdmin() : isRoot();
+export default async function isElevated() {
+	return process.platform === 'win32' ? isAdmin() : isRoot();
+}
